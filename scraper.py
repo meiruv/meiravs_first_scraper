@@ -138,5 +138,5 @@ class scrape_supports(object):
                         #out.writerow(_row)
                       #morphio uses this:
                       scraperwiki.sqlite.save(['hcode'], _row)
-                        print _row
+                      print _row
 
