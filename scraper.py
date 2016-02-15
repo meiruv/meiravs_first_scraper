@@ -11,11 +11,11 @@ import requests as real_requests
 import csv
 import re
 import subprocess
-#from pyquery import PyQuery as pq
+from pyquery import PyQuery as pq
 #import PyQuery as pq
 
 #this defines the database to which the output will be written:
-ScraperWiki.config = { db: 'data.sqlite', default_table_name: 'data' }
+#ScraperWiki.config = { db: 'data.sqlite', default_table_name: 'data' }
 #original code definitions:
 codes = [
  ('2900',
@@ -138,6 +138,7 @@ class scrape_supports(object):
                       ##instead of this:
                         #out.writerow(_row)
                       #morphio uses this:
-                       scraperwiki.sqlite.save(['hcode'], _row)
+                       scraperwiki.sqlite.save(unique_keys=['code'], data=data)
+                       #scraperwiki.sqlite.save(['hcode'], _row)
                        print _row
 
