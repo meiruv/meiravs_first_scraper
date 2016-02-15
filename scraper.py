@@ -6,7 +6,7 @@ import lxml.html
 #original scraper imports:
 import gzip
 import time
-import requesocks as requests
+#import requesocks as requests
 import requests as real_requests
 import csv
 import re
