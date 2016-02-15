@@ -13,6 +13,8 @@ import re
 import subprocess
 #from pyquery import PyQuery as pq
 #import PyQuery as pq
+import os
+os.environ['SCRAPERWIKI_DATABASE_NAME'] = 'sqlite:///data.sqlite'
 
 #this defines the database to which the output will be written:
 #ScraperWiki.config = { db: 'data.sqlite', default_table_name: 'data' }
