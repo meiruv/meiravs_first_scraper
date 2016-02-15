@@ -138,7 +138,7 @@ class scrape_supports(object):
                       ##instead of this:
                         #out.writerow(_row)
                       #morphio uses this:
-                       scraperwiki.sqlite.save(unique_keys=['code'], data=_row)
+                       scraperwiki.sqlite.save(unique_keys=['hcode', 'item_code'], data=_row)
                        #scraperwiki.sqlite.save(['hcode'], _row)
                        print _row
 
