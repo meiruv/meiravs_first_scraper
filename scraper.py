@@ -11,7 +11,8 @@ import requests as real_requests
 import csv
 import re
 import subprocess
-from pyquery import PyQuery as pq
+#from pyquery import PyQuery as pq
+import PyQuery as pq
 
 #this defines the database to which the output will be written:
 ScraperWiki.config = { db: 'data.sqlite', default_table_name: 'data' }
